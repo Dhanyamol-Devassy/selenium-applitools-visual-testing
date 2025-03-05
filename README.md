@@ -6,16 +6,6 @@ This project demonstrates AI-powered visual testing using Selenium WebDriver and
 
 ✅ Automates UI validation with Applitools Visual AI✅ Detects pixel-perfect UI changes without false positives✅ Works across browsers and screen sizes
 
-🐂 Repository Structure
-
-selenium-applitools-visual-testing/
-│── tests/
-│   ├── test_homepage_visual.py  # Test script for homepage UI validation
-│   ├── test_banner_visual.py    # Test script for banner UI validation
-│── requirements.txt  # Required dependencies
-│── .gitignore  # Ignore unnecessary files
-│── README.md  # Documentation
-
 🚀 Setup & Installation
 
 1️⃣ Install Dependencies
@@ -32,10 +22,12 @@ Sign up at Applitools
 
 Navigate to Account Settings → Copy your API Key
 
-Replace YOUR_APPLITOOLS_API_KEY in test scripts
+Replace YOUR_API_KEY in test scripts
 
 3️⃣ Run the Tests
-
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
 python tests/test_homepage_visual.py
 python tests/test_banner_visual.py
 
